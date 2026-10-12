@@ -106,3 +106,5 @@ No installation or server is needed.
 ## Author
 
 Yuganter Veerwal
+## Link
+https://fitforensic.vercel.app
