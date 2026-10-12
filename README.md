@@ -34,26 +34,25 @@ fitforensic/
 ├── style.css      # design, layout, responsive and print styles
 ├── script.js      # JavaScript (water calculator and registration slip)
 ├── README.md      # this file
-└── images/
-    ├── hero.svg
-    ├── equip-treadmill.svg
-    ├── equip-bike.svg
-    ├── equip-barbell.svg
-    ├── equip-dumbbell.svg
-    ├── equip-cable.svg
-    ├── equip-kettlebell.svg
-    ├── prog-weightloss.svg
-    ├── prog-musclegain.svg
-    ├── prog-hiit.svg
-    ├── prog-yoga.svg
-    ├── prog-beginner.svg
-    └── prog-functional.svg
+├── hero.svg
+├── equip-treadmill.svg
+├── equip-bike.svg
+├── equip-barbell.svg
+├── equip-dumbbell.svg
+├── equip-cable.svg
+├── equip-kettlebell.svg
+├── prog-weightloss.svg
+├── prog-musclegain.svg
+├── prog-hiit.svg
+├── prog-yoga.svg
+├── prog-beginner.svg
+└── prog-functional.svg
 ```
 
 ## How to Run
 
 1. Download or unzip the project folder.
-2. Keep `index.html`, `style.css`, `script.js` and the `images` folder together.
+2. Keep `index.html`, `style.css` , `script.js` and all the images in the same folder.
 3. Double-click `index.html` to open it in any modern browser (Chrome, Edge, Firefox).
 
 No installation or server is needed.
