@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitForensic | Gym &amp; Fitness Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="website">
+
+  <!-- ========== HEADER / NAVIGATION ========== -->
+  <header class="no-print">
+    <div class="container nav">
+      <h1 class="logo">Fit<span>Forensic</span></h1>
+      <nav>
+        <a href="#home">Scene</a>
+        <a href="#health">Health</a>
+        <a href="#plans">Membership</a>
+        <a href="#equipment">Equipment</a>
+        <a href="#programs">Programs</a>
+        <a href="#schedule">Fitness Plan</a>
+        <a href="#join" class="btn-small">Join Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section id="home" class="hero no-print">
+    <div class="container">
+      <p class="case-tag">CASE FILE #001 // LOCATION: FITFORENSIC GYM</p>
+      <h2>The Only <span>Crime Scene</span> You'll Want To Be At.</h2>
+      <p class="intro">Weights scattered across the floor. Sweat on every surface. Chalk outlines where the old you used to stand. The only thing that went missing here is your excuses, and we need you on the scene to witness it.</p>
+      <a href="#plans" class="btn">View Membership Plans</a>
+      <a href="#join" class="btn btn-outline">Report To The Scene</a>
+    </div>
+  </section>
+
+  <!-- ========== HEALTH INFORMATION ========== -->
+  <section id="health" class="section no-print">
+    <div class="container">
+      <h2 class="title">Forensic Notes: Health Information</h2>
+      <p class="subtitle">Good fitness is 30% workout and 70% lifestyle. Study the evidence.</p>
+
+      <div class="grid">
+        <div class="card">
+          <div class="icon">🥗</div>
+          <h3>Balanced Nutrition</h3>
+          <p>Eat protein (dal, paneer, eggs, chicken), complex carbs (oats, brown rice, roti) and healthy fats (nuts, seeds). Avoid too much sugar and fried food.</p>
+        </div>
+        <div class="card">
+          <div class="icon">💧</div>
+          <h3>Stay Hydrated</h3>
+          <p>Drink 2.5 to 3.5 litres of water daily. Drink more on workout days and in hot weather.</p>
+        </div>
+        <div class="card">
+          <div class="icon">😴</div>
+          <h3>Sleep &amp; Recovery</h3>
+          <p>Sleep 7 to 9 hours every night. Muscles grow during rest, not during the workout. Take 1 or 2 rest days each week.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🧘</div>
+          <h3>Warm-up &amp; Cool-down</h3>
+          <p>Warm up for 5 to 10 minutes before lifting and stretch for 5 minutes after. This prevents injuries.</p>
+        </div>
+      </div>
+
+      <!-- WATER INTAKE CALCULATOR (uses basic JavaScript) -->
+      <div class="calc-box">
+        <h3>Hydration Evidence Calculator</h3>
+        <p>Find out how much water you should drink every day.</p>
+        <label for="weight">Your weight (kg)</label>
+        <input type="number" id="weight" placeholder="e.g. 65">
+        <label for="workout">Are you working out today?</label>
+        <select id="workout">
+          <option value="no">No, rest day</option>
+          <option value="yes">Yes, I am training</option>
+        </select>
+        <button type="button" class="btn" onclick="calculateWater()">Calculate Water Intake</button>
+        <p id="waterResult" class="result"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MEMBERSHIP PLANS ========== -->
+  <section id="plans" class="section dark no-print">
+    <div class="container">
+      <h2 class="title">Membership Plans</h2>
+      <p class="subtitle">Pick your clearance level. No hidden charges.</p>
+
+      <div class="grid plans">
+        <div class="plan">
+          <h3>Basic</h3>
+          <p class="rank">Rookie Detective</p>
+          <p class="price">₹999<span>/month</span></p>
+          <ul>
+            <li>Access to gym floor</li>
+            <li>Cardio &amp; strength equipment</li>
+            <li>Locker facility</li>
+            <li>6 AM to 10 AM slot</li>
+          </ul>
+          <a href="#join" class="btn">Choose Basic</a>
+        </div>
+
+        <div class="plan featured">
+          <div class="badge">Most Popular</div>
+          <h3>Standard</h3>
+          <p class="rank">Lead Investigator</p>
+          <p class="price">₹1,999<span>/month</span></p>
+          <ul>
+            <li>Everything in Basic</li>
+            <li>Open all day (6 AM to 10 PM)</li>
+            <li>Group classes (Zumba, Yoga)</li>
+            <li>Monthly body check-up</li>
+          </ul>
+          <a href="#join" class="btn">Choose Standard</a>
+        </div>
+
+        <div class="plan">
+          <h3>Premium</h3>
+          <p class="rank">Chief Inspector</p>
+          <p class="price">₹3,499<span>/month</span></p>
+          <ul>
+            <li>Everything in Standard</li>
+            <li>Personal trainer</li>
+            <li>Custom diet chart</li>
+            <li>Steam &amp; sauna access</li>
+          </ul>
+          <a href="#join" class="btn">Choose Premium</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EQUIPMENT ========== -->
+  <section id="equipment" class="section no-print">
+    <div class="container">
+      <h2 class="title">Evidence Room: Fitness Equipment</h2>
+      <p class="subtitle">Everything you need under one roof.</p>
+
+      <div class="grid">
+        <div class="card">
+          <img src="equip-treadmill.svg" alt="Chalk outline of a treadmill at a crime scene">
+          <h3>Evidence #1: Treadmill</h3>
+          <p><b>Type:</b> Cardio<br><b>Best for:</b> Fat loss, stamina<br>Adjustable speed and incline for walking, jogging or running.</p>
+        </div>
+        <div class="card">
+          <img src="equip-bike.svg" alt="Chalk outline of a stationary bike at a crime scene">
+          <h3>Evidence #2: Stationary Bike</h3>
+          <p><b>Type:</b> Cardio<br><b>Best for:</b> Low-impact workout<br>Easy on the knees. Good for beginners and recovery days.</p>
+        </div>
+        <div class="card">
+          <img src="equip-barbell.svg" alt="Chalk outline of a barbell with plates at a crime scene">
+          <h3>Evidence #3: Barbell &amp; Plates</h3>
+          <p><b>Type:</b> Strength<br><b>Best for:</b> Squats, bench press, deadlifts<br>Builds overall muscle and strength.</p>
+        </div>
+        <div class="card">
+          <img src="equip-dumbbell.svg" alt="Chalk outline of a dumbbell at a crime scene">
+          <h3>Evidence #4: Dumbbells</h3>
+          <p><b>Type:</b> Strength<br><b>Best for:</b> Arms, shoulders, chest<br>Weights from 2 kg to 50 kg for every level.</p>
+        </div>
+        <div class="card">
+          <img src="equip-cable.svg" alt="Chalk outline of a cable machine at a crime scene">
+          <h3>Evidence #5: Cable Machine</h3>
+          <p><b>Type:</b> Strength<br><b>Best for:</b> Back, triceps, core<br>Smooth, controlled resistance for many exercises.</p>
+        </div>
+        <div class="card">
+          <img src="equip-kettlebell.svg" alt="Chalk outline of a kettlebell at a crime scene">
+          <h3>Evidence #6: Kettlebells</h3>
+          <p><b>Type:</b> Functional<br><b>Best for:</b> Swings, full-body workouts<br>Improves strength, balance and fitness together.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FITNESS PROGRAMS ========== -->
+  <section id="programs" class="section dark no-print">
+    <div class="container">
+      <h2 class="title">Open Cases: Fitness Programs</h2>
+      <p class="subtitle">Pick the case that matches your goal.</p>
+
+      <div class="grid">
+        <div class="card">
+          <img src="prog-weightloss.svg" alt="Chalk outline of a weighing scale with a down arrow">
+          <h3>Case 1: Weight Loss</h3>
+          <p>Cardio + strength + diet guidance.<br><b>Duration:</b> 12 weeks<br><b>Level:</b> All</p>
+        </div>
+        <div class="card">
+          <img src="prog-musclegain.svg" alt="Chalk outline of a weight plate with an up arrow">
+          <h3>Case 2: Muscle Gain</h3>
+          <p>Heavy lifting with a high-protein plan.<br><b>Duration:</b> 16 weeks<br><b>Level:</b> Beginner to Advanced</p>
+        </div>
+        <div class="card">
+          <img src="prog-hiit.svg" alt="Chalk outline of a stopwatch with a lightning bolt">
+          <h3>Case 3: HIIT</h3>
+          <p>Short, intense 30-minute sessions that burn lots of calories.<br><b>Duration:</b> 8 weeks<br><b>Level:</b> Intermediate</p>
+        </div>
+        <div class="card">
+          <img src="prog-yoga.svg" alt="Chalk outline of a person sitting in a yoga pose">
+          <h3>Case 4: Yoga &amp; Flexibility</h3>
+          <p>Improves flexibility, posture and mental calm.<br><b>Duration:</b> Ongoing<br><b>Level:</b> All</p>
+        </div>
+        <div class="card">
+          <img src="prog-beginner.svg" alt="Chalk outline of a small sprout growing">
+          <h3>Case 5: Beginner Starter</h3>
+          <p>Learn the basics of machines, form and safety.<br><b>Duration:</b> 4 weeks<br><b>Level:</b> Beginner</p>
+        </div>
+        <div class="card">
+          <img src="prog-functional.svg" alt="Chalk outline of a person jumping onto a box">
+          <h3>Case 6: Functional Training</h3>
+          <p>Boost strength, balance and speed. Great for athletes.<br><b>Duration:</b> 10 weeks<br><b>Level:</b> Intermediate</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FITNESS PLAN (WEEKLY SCHEDULE) ========== -->
+  <section id="schedule" class="section no-print">
+    <div class="container">
+      <h2 class="title">Investigation Schedule: Weekly Fitness Plan</h2>
+      <p class="subtitle">A simple 6-day split for beginners to intermediate members.</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Day</th><th>Focus</th><th>Workout</th><th>Time</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Monday</td><td>Chest &amp; Triceps</td><td>Bench press, push-ups, dips</td><td>60 min</td></tr>
+            <tr><td>Tuesday</td><td>Back &amp; Biceps</td><td>Pull-ups, rows, curls</td><td>60 min</td></tr>
+            <tr><td>Wednesday</td><td>Legs</td><td>Squats, lunges, leg press</td><td>60 min</td></tr>
+            <tr><td>Thursday</td><td>Shoulders &amp; Abs</td><td>Shoulder press, planks, crunches</td><td>50 min</td></tr>
+            <tr><td>Friday</td><td>Cardio &amp; HIIT</td><td>Treadmill, cycling, burpees</td><td>45 min</td></tr>
+            <tr><td>Saturday</td><td>Full Body / Yoga</td><td>Light weights, stretching</td><td>45 min</td></tr>
+            <tr><td>Sunday</td><td>Rest</td><td>Walk and relax</td><td>-</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="diet-box">
+        <h3>Sample Daily Diet</h3>
+        <p><b>Breakfast:</b> Oats with milk, banana, 2 eggs or paneer<br>
+           <b>Lunch:</b> 2 rotis, dal, vegetables, salad, curd<br>
+           <b>Evening:</b> Fruit, roasted chana or a protein shake<br>
+           <b>Dinner:</b> Grilled chicken or paneer, vegetables, 1 roti</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== JOIN FORM ========== -->
+  <section id="join" class="section dark no-print">
+    <div class="container">
+      <h2 class="title">Report To The Scene</h2>
+      <p class="subtitle">Fill in the form to register. You can print your case registration slip afterwards.</p>
+
+      <form id="joinForm" class="form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Your full name" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="10-digit mobile number" required>
+
+        <label for="plan">Membership Plan</label>
+        <select id="plan">
+          <option value="999">Basic - ₹999/month</option>
+          <option value="1999">Standard - ₹1,999/month</option>
+          <option value="3499">Premium - ₹3,499/month</option>
+        </select>
+
+        <label for="duration">Duration</label>
+        <select id="duration">
+          <option value="1">1 Month</option>
+          <option value="3">3 Months</option>
+          <option value="6">6 Months</option>
+          <option value="12">12 Months</option>
+        </select>
+
+        <label for="program">Fitness Program</label>
+        <select id="program">
+          <option>Weight Loss</option>
+          <option>Muscle Gain</option>
+          <option>HIIT</option>
+          <option>Yoga &amp; Flexibility</option>
+          <option>Beginner Starter</option>
+          <option>Functional Training</option>
+        </select>
+
+        <label for="startDate">Start Date</label>
+        <input type="date" id="startDate" required>
+
+        <button type="button" class="btn" onclick="submitForm()">Register Now</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container">
+      <p><b>FitForensic</b> | Open daily 6 AM to 10 PM</p>
+      <p>Phone: +91 9911941029 | Email: fitforensic@gmail.com</p>
+      <p>&copy; 2026 FitForensic. All rights reserved.</p>
+    </div>
+  </footer>
+
+  </div>
+  <!-- end of website -->
+
+  <!-- ========== REGISTRATION SLIP (hidden until form is submitted) ========== -->
+  <section id="receipt" class="receipt" style="display: none;">
+    <h2>FitForensic - Case Registration Slip</h2>
+    <p class="center">Welcome to the scene. Your case is now open!</p>
+    <table class="receipt-table">
+      <tr><td>Name</td><td id="r-name"></td></tr>
+      <tr><td>Phone</td><td id="r-phone"></td></tr>
+      <tr><td>Monthly Fee (Rs.)</td><td id="r-plan"></td></tr>
+      <tr><td>Program</td><td id="r-program"></td></tr>
+      <tr><td>Start Date</td><td id="r-start"></td></tr>
+      <tr><td><b>Total Fees</b></td><td><b id="r-total"></b></td></tr>
+    </table>
+    <p class="center small">Please carry this slip on your first visit to the scene.</p>
+
+    <div class="no-print center">
+      <button type="button" class="btn" onclick="window.print()">🖨️ Print Slip</button>
+      <button type="button" class="btn btn-outline" onclick="goBack()">Back to Website</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
